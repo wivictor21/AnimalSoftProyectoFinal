@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.Master.cs" Inherits="AnimalSoftProyectoFinal.Plantilla" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>AnimalSoft</title>
+    <link href="css/Estilos.css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header id="encabezado">
+            <a href="#" id="logo"><img src="images/logo.gif" width="310" height="114" alt=""></a>
+            <h1>AnimalSoft</h1>
+        </header>
+        <nav id="navegacion">
+            <ul>
+                <li><a href="Inicio.aspx">Inicio</a></li>
+                <li><a href="Propietarios.aspx">Propietarios</a></li>
+                <li><a href="Animales.aspx">Animales</a></li>
+                <li><a href="AdopcionPositiva.aspx">Adopción positiva</a></li>
+                <li><a href="AdopcionNegativa.aspx">Adopción negativa</a></li>
+                <li><a href="InformePorParametros.aspx">Informe por parametros</a></li>
+                <li><a href="GraficosPorParametros.aspx">Gráficos por parametros</a></li>
+            </ul>
+        </nav>
+        <aside id="lado">
+            <h1>Sobre Nosotros</h1>
+            <a href="#"><p>Victor Huertas</p></a>
+            <a href="#"><p>Alex Moreno</p></a>
+            <a href="#"><p>Universidad Distrital</p></a>
+        </aside>
+        <div id="principal">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer id="pie">
+            2021: Programacion Web 302 Universidad Distrital
+        </footer>
+    </form>
+</body>
+</html>
